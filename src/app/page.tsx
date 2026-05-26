@@ -24,7 +24,7 @@ export default function Home() {
             </div>
             <div className="col-span-12 md:col-span-11 md:order-1">
               <p className={`text-[11px] font-[family-name:var(--font-mono)] uppercase tracking-[0.25em] mb-10 ${ACCENT}`}>
-                Roteiros TikTok · Reels · YouTube Shorts
+                Para creators do nicho finanças · 30 segundos · R$ 9
               </p>
               <h1 className="font-[family-name:var(--font-serif)] italic text-[clamp(2.75rem,8vw,7rem)] leading-[0.95] tracking-tight text-zinc-100 mb-12 max-w-5xl">
                 Você é manipulado
@@ -34,9 +34,9 @@ export default function Home() {
               <div className="grid grid-cols-12 gap-x-6">
                 <div className="hidden md:block md:col-span-3" />
                 <p className="col-span-12 md:col-span-7 text-lg leading-relaxed text-zinc-400 mb-12 max-w-[55ch]">
-                  Roteiros virais de 30 segundos sobre dinheiro, psicologia
-                  financeira e padrões dos super-ricos. Tom Mr Robot.
-                  Entrega em 60 segundos. R$ 5 cada.
+                  Hooks de 30 segundos que param o scroll no segundo 1.
+                  Fórmula validada: número, lei científica, exemplo do
+                  cotidiano. R$ 9 por roteiro. Entrega em 60 segundos.
                 </p>
               </div>
               <div className="grid grid-cols-12 gap-x-6">
@@ -47,17 +47,71 @@ export default function Home() {
                     className="inline-flex items-center justify-between bg-zinc-100 text-black px-8 py-5 font-[family-name:var(--font-mono)] uppercase text-[11px] tracking-[0.2em] hover:bg-white transition-colors flex-1"
                   >
                     <span>Comprar roteiro</span>
-                    <span className="ml-8">R$ 5 →</span>
+                    <span className="ml-8">R$ 9 →</span>
                   </Link>
                   <Link
                     href="#exemplo"
                     className="inline-flex items-center justify-between bg-black border border-zinc-800 text-zinc-200 px-8 py-5 font-[family-name:var(--font-mono)] uppercase text-[11px] tracking-[0.2em] hover:border-zinc-500 hover:text-white transition-colors flex-1"
                   >
-                    <span>Exemplo grátis</span>
+                    <span>Ler um roteiro pronto</span>
                     <span className="ml-8">↓</span>
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ANCHOR — Kennedy comparative anchoring (manifesto repositioned) */}
+        <section className="border-b border-zinc-900 bg-zinc-950/30">
+          <div className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-12 gap-x-6">
+            <div className="col-span-12 md:col-start-4 md:col-span-9">
+              <p className={`text-[10px] font-[family-name:var(--font-mono)] uppercase tracking-[0.25em] mb-8 ${ACCENT}`}>
+                § Ancora
+              </p>
+              <p className="font-[family-name:var(--font-serif)] italic text-3xl md:text-4xl leading-tight text-zinc-200 max-w-3xl">
+                Você não precisa de um curso de R$ 1.997 sobre como
+                &ldquo;virar criador&rdquo;. Precisa de uma palavra certa
+                no segundo zero. R$ 9 por hook. O resto você grava.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* PARA QUEM — qualification section */}
+        <section className="border-b border-zinc-900">
+          <div className="max-w-6xl mx-auto px-6 py-24 grid grid-cols-12 gap-x-6">
+            <div className="col-span-12 md:col-span-3 mb-10 md:mb-0">
+              <p className="text-[10px] font-[family-name:var(--font-mono)] uppercase tracking-[0.25em] text-zinc-500">
+                § Para quem
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-9">
+              <h2 className="font-[family-name:var(--font-serif)] italic text-4xl md:text-5xl leading-tight text-zinc-100 mb-12 max-w-3xl">
+                Isto é para você se:
+              </h2>
+              <ul className="space-y-6 max-w-2xl">
+                {[
+                  "Você posta sobre dinheiro, investimentos, economia ou psicologia financeira e seus vídeos morrem antes dos 3 segundos.",
+                  "Você sabe o conteúdo mas trava na frase de abertura. Escreve, apaga, escreve de novo, perde a tarde.",
+                  "Você cansou de testar fórmulas tipo 'isso vai mudar sua vida' e quer hooks que soem investigativos, não motivacionais.",
+                  "Você prefere pagar R$ 9 por um hook pronto a passar 2h escrevendo um que talvez não funcione.",
+                ].map((item, idx) => (
+                  <li key={idx} className="flex gap-6 border-b border-zinc-900 pb-6">
+                    <span className={`font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-[0.25em] ${ACCENT} pt-1.5 shrink-0`}>
+                      0{idx + 1}
+                    </span>
+                    <p className="text-base md:text-lg leading-relaxed text-zinc-300">
+                      {item}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm text-zinc-500 mt-10 max-w-2xl">
+                Não é pra você se: vende coaching com promessas de
+                enriquecimento, precisa de roteiros longos (&gt;90s), ou prefere
+                escrever sozinho.
+              </p>
             </div>
           </div>
         </section>
@@ -169,7 +223,7 @@ export default function Home() {
                     <dt className="text-zinc-600 uppercase text-[10px] font-[family-name:var(--font-mono)] tracking-widest">
                       Voz
                     </dt>
-                    <dd className="text-zinc-300">Mr Robot · Tom baixo</dd>
+                    <dd className="text-zinc-300">Investigativo · Tom baixo</dd>
                   </div>
                   <div className="flex justify-between border-b border-zinc-900 pb-2">
                     <dt className="text-zinc-600 uppercase text-[10px] font-[family-name:var(--font-mono)] tracking-widest">
@@ -181,7 +235,7 @@ export default function Home() {
                     <dt className="text-zinc-600 uppercase text-[10px] font-[family-name:var(--font-mono)] tracking-widest">
                       Pausa estratégica
                     </dt>
-                    <dd className="text-zinc-300">14s · após "ancoragem"</dd>
+                    <dd className="text-zinc-300">14s · após &ldquo;ancoragem&rdquo;</dd>
                   </div>
                 </dl>
               </div>
@@ -206,7 +260,7 @@ export default function Home() {
                 },
                 {
                   num: "02",
-                  title: "Paga R$ 5",
+                  title: "Paga R$ 9",
                   body: "Cartão, PIX ou PayPal via Lemon Squeezy. Sem assinatura. Sem retenção de dados. Pago uma vez, roteiro seu.",
                 },
                 {
@@ -230,6 +284,27 @@ export default function Home() {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* OBJECTION BURN — Halbert risk reversal */}
+        <section className="border-b border-zinc-900 bg-zinc-950/30">
+          <div className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-12 gap-x-6">
+            <div className="col-span-12 md:col-span-3 mb-10 md:mb-0">
+              <p className="text-[10px] font-[family-name:var(--font-mono)] uppercase tracking-[0.25em] text-zinc-500">
+                § Garantia
+              </p>
+            </div>
+            <div className="col-span-12 md:col-span-9">
+              <p className="font-[family-name:var(--font-serif)] italic text-3xl md:text-4xl leading-tight text-zinc-100 max-w-3xl mb-6">
+                Se o roteiro vier ruim, eu devolvo o dinheiro em 7 dias
+                sem pedir motivo.
+              </p>
+              <p className="text-base text-zinc-400 leading-relaxed max-w-2xl">
+                E você fica com o roteiro mesmo assim. Você arrisca zero.
+                Quem arrisca sou eu.
+              </p>
             </div>
           </div>
         </section>
@@ -268,19 +343,19 @@ export default function Home() {
                     {
                       title: "Single",
                       desc: "1 roteiro · 30s",
-                      price: "R$ 5",
+                      price: "R$ 9",
                       featured: false,
                     },
                     {
                       title: "Pack 5",
                       desc: "5 roteiros · mesmo nicho",
-                      price: "R$ 20",
+                      price: "R$ 29",
                       featured: true,
                     },
                     {
                       title: "Pack 15",
                       desc: "15 roteiros · 3 nichos",
-                      price: "R$ 50",
+                      price: "R$ 69",
                       featured: false,
                     },
                   ].map((row) => (
@@ -322,19 +397,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* MANIFESTO — claim final */}
-        <section className="border-b border-zinc-900">
-          <div className="max-w-6xl mx-auto px-6 py-24 grid grid-cols-12 gap-x-6">
-            <div className="col-span-12 md:col-start-4 md:col-span-9">
-              <p className="font-[family-name:var(--font-serif)] italic text-3xl md:text-4xl leading-tight text-zinc-200 max-w-3xl">
-                Você não precisa de um curso de R$ 1.997 sobre como
-                &ldquo;virar criador&rdquo;. Precisa de uma palavra certa
-                no segundo zero. R$ 5 por hook. O resto você grava.
-              </p>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* FOOTER — colofón editorial */}
@@ -348,7 +410,7 @@ export default function Home() {
             <p>Hosted on Vercel</p>
           </div>
           <div className="col-span-6 md:col-span-4 md:text-right">
-            <p>Versão 0.1.0</p>
+            <p>Versão 0.2.0</p>
             <p>Pré-lançamento · Brasil</p>
           </div>
         </div>
